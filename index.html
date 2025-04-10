@@ -20,6 +20,13 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: var(--main-gradient);
+  <title>SandpinAI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+>>>>>>> a129707 (Auto update)
       color: white;
     }
 
@@ -33,6 +40,19 @@
       text-align: center;
       padding: 25px 10px 10px;
       background: linear-gradient(to right, #ff00cc, var(--highlight));
+      from {
+        text-shadow: 0 0 10px #ff00cc;
+      }
+      to {
+        text-shadow: 0 0 20px #3333ff;
+      }
+    }
+
+    .welcome-glow {
+      font-size: 2rem;
+      text-align: center;
+      padding: 25px 10px 10px;
+      background: linear-gradient(to right, #ff00cc, #3333ff);
       -webkit-background-clip: text;
       color: transparent;
       animation: glow 3s infinite alternate;
@@ -46,6 +66,9 @@
       padding: 10px 0;
       flex-wrap: wrap;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      background: #111;
+      padding: 10px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -63,6 +86,15 @@
 
     .section {
       padding: 40px 20px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #3333ff;
+    }
+
+    .section {
+      padding: 30px 20px;
       text-align: center;
     }
 
@@ -72,6 +104,7 @@
       border-radius: 12px;
       margin: 15px auto;
       max-width: 320px;
+      max-width: 300px;
       box-shadow: 0 0 10px #000;
     }
 
