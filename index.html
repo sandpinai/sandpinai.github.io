@@ -1,33 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SandpinAI</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    .welcome-glow {
+      font-size: 2.2rem;
+      text-align: center;
+      padding: 25px 10px 10px;
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff00cc; }
+      to { text-shadow: 0 0 20px #3333ff; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #111;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #3333ff;
+      box-shadow: 0 0 10px #3333ff;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .explore-btn {
+      margin-top: 20px;
+      display: inline-block;
+      background: #3333ff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .floating-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .floating-icons a {
+      background: #333;
+      padding: 12px;
+      border-radius: 50%;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .floating-icons a:hover {
+      background: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
   <div class="welcome-glow">Welcome to SandpinAI</div>
 
   <nav>
-  <a href="index.html">Home</a>
-  <a href="tools.html">Tools</a>
-  <a href="images.html">Images</a>
-  <a href="profile.html">Profile</a>
-</nav>
+    <a href="index.html">Home</a>
+    <a href="tools.html">Tools</a>
+    <a href="images.html">Images</a>
+    <a href="profile.html">Profile</a>
+  </nav>
 
   <div class="section" id="home">
     <h2>Explore Smart AI Solutions</h2>
     <p>The most powerful tools made with pure code and AI power.</p>
-    <a href="tools.html" style="display:inline-block;margin-top:15px;padding:10px 20px;background:#3333ff;color:#fff;border-radius:6px;text-decoration:none;">Start Exploring</a>
+    <a href="tools.html" class="explore-btn">Start Exploring</a>
   </div>
 
   <div class="floating-icons">
-    <a href="https://t.me/sandpinai" title="Telegram">T</a>
-    <a href="https://www.youtube.com/@SandpinAI" title="YouTube">Y</a>
-    <a href="https://www.facebook.com/share/164sEb8fw3/" title="Facebook">F</a>
+    <a href="https://t.me/sandpinai" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://www.youtube.com/@SandpinAI" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/share/164sEb8fw3/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/sandpinaioffical" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
   </div>
 
   <footer>
