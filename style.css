@@ -1,0 +1,108 @@
+:root {
+  --main-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --highlight: #3333ff;
+  --nav-bg: #111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--main-gradient);
+  color: white;
+}
+
+.welcome-glow {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 25px 10px 10px;
+  background: linear-gradient(to right, #ff00cc, var(--highlight));
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff00cc;
+  }
+  to {
+    text-shadow: 0 0 20px var(--highlight);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: var(--nav-bg);
+  padding: 10px 0;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: var(--highlight);
+  box-shadow: 0 0 10px var(--highlight);
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tool-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px auto;
+  max-width: 320px;
+  box-shadow: 0 0 10px #000;
+}
+
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-icons a {
+  background: #333;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .welcome-glow {
+    font-size: 1.7rem;
+  }
+  .tool-card {
+    margin: 10px 20px;
+  }
+}

@@ -3,198 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SandpinAI – AI Tools for the Smart Future</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" type="image/png">
-  <style>
-    :root {
-      --main-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      --highlight: #3333ff;
-      --nav-bg: #111;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--main-gradient);
   <title>SandpinAI</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
->>>>>>> a129707 (Auto update)
-      color: white;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #ff00cc; }
-      to { text-shadow: 0 0 20px var(--highlight); }
-    }
-
-    .welcome-glow {
-      font-size: 2.2rem;
-      text-align: center;
-      padding: 25px 10px 10px;
-      background: linear-gradient(to right, #ff00cc, var(--highlight));
-      from {
-        text-shadow: 0 0 10px #ff00cc;
-      }
-      to {
-        text-shadow: 0 0 20px #3333ff;
-      }
-    }
-
-    .welcome-glow {
-      font-size: 2rem;
-      text-align: center;
-      padding: 25px 10px 10px;
-      background: linear-gradient(to right, #ff00cc, #3333ff);
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: glow 3s infinite alternate;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background: var(--nav-bg);
-      padding: 10px 0;
-      flex-wrap: wrap;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      background: #111;
-      padding: 10px 0;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      background: var(--highlight);
-      box-shadow: 0 0 10px var(--highlight);
-    }
-
-    .section {
-      padding: 40px 20px;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background: #3333ff;
-    }
-
-    .section {
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .tool-card {
-      background: #222;
-      padding: 20px;
-      border-radius: 12px;
-      margin: 15px auto;
-      max-width: 320px;
-      max-width: 300px;
-      box-shadow: 0 0 10px #000;
-    }
-
-    .floating-icons {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .floating-icons a {
-      background: #333;
-      padding: 10px;
-      border-radius: 50%;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    #scrollTopBtn {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      background: var(--highlight);
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 16px;
-      display: none;
-      z-index: 1000;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      .welcome-glow {
-        font-size: 1.7rem;
-      }
-      .tool-card {
-        margin: 10px 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" type="image/png">
 </head>
 <body>
 
   <div class="welcome-glow">Welcome to SandpinAI</div>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#tools">Tools</a>
-    <a href="#images">Images</a>
-    <a href="#profile">Profile</a>
+    <a href="index.html">Home</a>
+    <a href="tools.html">Tools</a>
+    <a href="images.html">Images</a>
+    <a href="profile.html">Profile</a>
   </nav>
 
   <div class="section" id="home">
-    <p>Experience the most intelligent AI tool platform built like <strong>1000000</strong> computers worked on it!</p>
-  </div>
-
-  <div class="section" id="tools">
-    <h2>Tools</h2>
-    <div class="tool-card">
-      <h3>AI Ad Script Generator</h3>
-      <p>Create marketing content in seconds.</p>
-    </div>
-    <div class="tool-card">
-      <h3>Spiritual Art Creator</h3>
-      <p>Generate divine and aesthetic art with one click.</p>
-    </div>
-  </div>
-
-  <div class="section" id="images">
-    <h2>Images Section</h2>
-    <p>Explore and download generated AI images. (Coming soon)</p>
-  </div>
-
-  <div class="section" id="profile">
-    <h2>User Profile</h2>
-    <p>Customize your tools and saved creations.</p>
+    <h2>Explore Smart AI Solutions</h2>
+    <p>The most powerful tools made with pure code and AI power.</p>
+    <a href="tools.html" style="display:inline-block;margin-top:15px;padding:10px 20px;background:#3333ff;color:#fff;border-radius:6px;text-decoration:none;">Start Exploring</a>
   </div>
 
   <div class="floating-icons">
@@ -203,21 +30,9 @@
     <a href="https://www.facebook.com/share/164sEb8fw3/" title="Facebook">F</a>
   </div>
 
-  <button onclick="scrollToTop()" id="scrollTopBtn">↑ Top</button>
-
   <footer>
-    &copy; 2025 SandpinAI. All rights reserved.
+    &copy; 2025 SandpinAI. Built with power, not templates.
   </footer>
-
-  <script>
-    const btn = document.getElementById("scrollTopBtn");
-    window.onscroll = () => {
-      btn.style.display = window.scrollY > 100 ? "block" : "none";
-    };
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
 
 </body>
 </html>
